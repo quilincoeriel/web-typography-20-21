@@ -18,7 +18,13 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 }
 .voice1 {
-	font-style: bold;
+	font-style: normal;
+}
+
+.voice2{
+font-size: 30px;
+font-style: normal;
+
 }
 
 /* **********************************************
@@ -104,7 +110,7 @@ Sounds.
 
 /* The moment the class .sound1 is added to the body, the background is yellow */
 .sound1 {
-	background: dark blue;
+	background: blue;
 }
 
 iframe {
@@ -112,5 +118,5 @@ iframe {
 }
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
 .sound1 iframe {
-	transform: rotate(1turn);
+	transform:skewY(1turn);
 }
