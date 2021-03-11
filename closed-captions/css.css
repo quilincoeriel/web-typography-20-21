@@ -5,26 +5,65 @@ Show them when they receive the class 'on'
 Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
+#closed-captions{
+	margin-top: 2em;
+	display: flex;
+	justify-content: center;
+}
 #closed-captions p {
 	opacity: 0;
-	transition: .05s;
+	transition: 0.5s;
 	position: absolute;
+
 }
 #closed-captions .on {
 	opacity: 1;
+	color: white;
+	margin: 10px 10px 10px 10px;
 }
 #closed-captions .off {
 	transition: .2s;
 	opacity: 0;
 }
 .voice1 {
+	/* font-size: 20px; */
+	color: Blue;
+	font-family: "Brenner Mono";
 	font-style: normal;
+	font-weight: 800;
+	/* text-decoration: underline; */
+
+}
+.voice2{
+font-family: "Brenner Sans";
+font-style: normal;
+font-weight: 200;
+font-size: 20px;
+color: Blue;
+
 }
 
-.voice2{
-font-size: 30px;
-font-style: normal;
+.voice3 {
+	font-size: 15px;
+	font-family: "Brenner Sans Condensed"
+}
 
+.voice4 {
+	font-family: "Brenner Sans";
+	font-style: Normal;
+	font-weight: 600;
+}
+/*posishon di e video*/
+#video-placeholder{
+	margin: auto;
+	/* padding-top: : 3em; */
+	padding: 5em;
+	display: block;
+
+	display: flex;
+	justify-content: center;
+	width: 700px;
+	height: 500px;
 }
 
 /* **********************************************
@@ -35,71 +74,96 @@ The first paragraph, with extended timing for
 	spoken.
 You probably want to change the styling.
 ********************************************** */
-.p0 span {
-	opacity: 0;
+/* .p0 span {
+	opacity: 1;
 	font-family: brenner;
+font-weight: 200;
+
+} */
+/* .p.voice1.p0.on {
+font-family: "brenner slab";
+font-style: bold;
+}
+
+
 }
 .p0.on span:first-of-type {
 	opacity: 1;
 	transition: 0s;
 	font-weight: 200;
+	font-family: "brenner slab";
+
 }
 .p0.on span:nth-of-type(2) {
 	opacity: 1;
 	transition: 0s .4s;
 	margin-right: -.25em;
-	font-weight: 400;
+	font-weight: 200;
+	font-family: "brenner slab";
+
 }
 .p0.on span:nth-of-type(3) {
 	opacity: 1;
 	transition: 0s .5s;
 	margin-right: -.25em;
-	font-weight: 600;
+	font-weight: 200;
+	font-family: "brenner display";
+
 }
 .p0.on span:nth-of-type(4) {
 	opacity: 1;
 	transition: 0s .7s;
 	margin-right: -.25em;
-	font-weight: 800;
+	font-weight: 200;
+	font-family: "brenner display";
+
 }
 .p0.on span:nth-of-type(5) {
 	opacity: 1;
 	transition: 0s 1.1s;
 	margin-right: -.25em;
-	font-family: "brenner sans";
+	font-family: "brenner";
 }
 .p0.on span:nth-of-type(6) {
 	opacity: 1;
 	transition: 0s 1.4s;
 	margin-right: -.25em;
-	font-family: "brenner display";
+	font-family: "brenner";
 }
 .p0.on span:nth-of-type(7) {
 	opacity: 1;
 	transition: 0s 1.7s;
 	margin-right: -.25em;
-	font-family: "brenner script";
+	font-family: "brenner";
 }
 .p0.on span:nth-of-type(8) {
 	opacity: 1;
 	transition: 0s 2s;
-	font-family: "brenner script";
+	font-family: "brenner";
 }
 .p0.on span:nth-of-type(9) {
 	opacity: 1;
 	transition: 0s 3s;
-	font-family: "brenner Sans condensed";
+	font-family: "brenner";
 }
 .p0.on span:nth-of-type(10) {
 	opacity: 1;
 	transition: 0s 3.2s;
-	font-family: "brenner mono";
+	font-family: "brenner";
 }
 .p0.on span:nth-of-type(11) {
 	opacity: 1;
 	transition: 0s 3.7s;
-	font-family: "brenner slab";
+	font-family: "brenner";
 }
+p.voice2.p1.on{
+	margin: 2em;
+	font-size: 20px;
+	font-style: italic;
+} */
+
+
+
 
 /* **********************************************
 Sounds.
@@ -108,15 +172,244 @@ Sounds.
 	a sound starts.
 *********************************************  */
 
+
 /* The moment the class .sound1 is added to the body, the background is yellow */
-.sound1 {
-	background: blue;
-}
+
 
 iframe {
-	transition: 1s;
+	transition: 4s;
+	animation: shake 0.5s;
+}
+
+
 }
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
+.sound0 iframe{
+	transform: scale(1.3);
+}
+
+.sound0{
+	background: #131E3A;
+	transform: scale(1.2);
+	transition-duration: 7s;
+
+
+}
+
 .sound1 iframe {
-	transform:skewY(1turn);
+	/* color: red; */
+
+}
+.sound1 {
+	background: red;
+	animation-name: shake;
+	animation-duration: 2s;
+}
+@keyframes shake {
+	0%{
+		transform: translateX(-1em);
+	}
+	10%{
+		transform: translateX(1em);
+	}
+	20%{
+		transform: translateX(-1em);
+	}
+	30%{
+		transform: translateX(1em);
+	}
+	40%{
+		transform: translateX(-1em);
+	}
+	50%{
+		transform: translateX(1em);
+	}
+}
+.sound2{
+	background: #131E3A;
+	transform: rotate(360deg);
+	transition-duration: 2s;
+	/* https://codepen.io/CodeXYZ/pen/xbdxyO */
+}
+.sound2 iframe{
+	background: #131E3A;
+	transform: rotate(360deg);
+	transition-duration: 2s;
+
+}
+.sound3 iframe{
+	transform: scale(.5);
+}
+.sound4 iframe{
+	transform: scale(1.1);
+	background-color: red;
+
+}
+
+
+.sound4{
+	background-color: red;
+	animation-name: blink;
+	animation-duration: 1s;
+}
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .1;}
+100%{opacity: 2;}
+}
+
+.sound5 iframe{
+
+	transform: scale(0.8);
+}
+.sound5{
+	background: #131E3A;
+
+}
+.sound6 iframe{
+	/* transform: scale(1.1);
+	transform: rotate(360deg); */
+	transform: scale(1.3);
+	transform-duration: 5s;
+
+}
+.sound6{
+	background: red;
+	animation-name: blink2;
+	animation-duration: 2s;
+
+}
+/* https://html-online.com/articles/blinking-text-css-animation/ */
+@keyframes blink2{
+0%{opacity: 1;}
+50%{opacity: 2.1;}
+100%{opacity: 2.5;}
+}
+
+.sound7{
+	transform: scale(0.7);
+	/* animation: filter-animation 5s; */
+	background: #131E3A;
+	color: #131E3A;
+
+}
+.sound7 iframe{
+	background: #131E3A;
+}
+/* @keyframes filter-animation {
+  0% {
+    filter: sepia(0) saturate(2);
+  }
+
+  50% {
+    filter: sepia(1) saturate(8);
+  }
+
+  100% {
+    filter: sepia(0) saturate(2);
+  } */
+	/* https://css-tricks.com/almanac/properties/f/filter/ */
+
+}
+.sound8 iframe{
+	transform: scale(1);
+	/* animation-name: blink3; */
+	/* animation-name: filter-animation; */
+transform-duration: 7s;
+	animation-duration: 3s;
+	color: red;
+
+}
+/* @keyframes blink3 {
+	0%{color: red opacity: 0;}
+	50%{color: red opacity: 0.1;}
+	100%{color: red opacity: 1;}
+
+} */
+@keyframes filter-animation {
+  0% {
+    filter: sepia(0) saturate(2);
+  }
+
+  50% {
+    filter: sepia(1) saturate(8);
+  }
+
+  100% {
+    filter: sepia(0) saturate(2);
+  } */
+	/* https://css-tricks.com/almanac/properties/f/filter/ */
+}
+.sound8 {
+	transform: scale(1);
+	/* animation-name: blink3; */
+	/* filter: blur(5px); */
+	animation-duration: 3s;
+	color: red;
+}
+.sound9 iframe{
+	animation-name: filter-animation;
+	animation-name: zoominoutsinglefeatured;
+	animation-duration: 40s;
+	/* animation: shake-animation 10s ease infinite;
+  transform-origin: 50% 50%; */
+
+}
+@keyframes filter-animation {
+  0% {
+    filter: sepia(0) saturate(2);
+  }
+
+  50% {
+    filter: sepia(1) saturate(8);
+  }
+
+  100% {
+    filter: sepia(0) saturate(2);
+  }
+}
+@keyframes zoominoutsinglefeatured {
+	0% {
+			transform: scale(1);
+	}
+	30% {
+			transform: scale(1.3);
+	}
+	60% {
+			transform: scale(1.5);
+	}
+	80% {
+			transform: scale(1.4);
+	}
+	90% {
+			transform: scale(1.3);
+	}
+	95% {
+			transform: scale(1.2);
+	}
+	100% {
+			transform: scale(1);
+	}
+}
+
+	/* https://medium.com/@bharatkaravadra/how-to-create-a-css-zoom-in-out-effect-546654fb54e4 */
+.sound10 iframe{
+	/* animation-name: shake-animation; */
+	animation: .8s shake-animation infinite alternate;
+	/* animation-duration: 40s; */
+}
+
+.sound10{
+	/* animation-name: shake-animation; */
+	/* animation: .8s shake-animation infinite alternate; */
+	/* animation-duration: 40s; */
+
+}
+@keyframes shake-animation {
+  0% { transform: skewX(-15deg); }
+  5% { transform: skewX(15deg); }
+  10% { transform: skewX(-15deg); }
+  15% { transform: skewX(15deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }
 }
