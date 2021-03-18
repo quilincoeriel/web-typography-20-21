@@ -6,7 +6,7 @@ Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
 #closed-captions{
-	margin-top: 2em;
+	margin-top: -10em;
 	display: flex;
 	justify-content: center;
 }
@@ -25,7 +25,81 @@ Feel free to adjust the defaults to your needs.
 	transition: .2s;
 	opacity: 0;
 }
-.voice1 {
+div#soundstext1{
+	display: flex;
+justify-content: center;
+opacity: 0;
+margin-top: -50px;
+font-size: 20px;
+color: red;
+}
+div#soundstext2{
+	display: flex;
+justify-content: center;
+opacity: 0;
+margin-top: -50px;
+font-size: 20px;
+color: Blue;
+}
+div#soundstext3{
+	display: flex;
+justify-content: center;
+opacity: 0;
+margin-top: -50px;
+font-size: 20px;
+color: Blue;
+}
+div#soundstext4{
+	display: flex;
+justify-content: center;
+opacity: 0;
+margin-top: -50px;
+font-size: 20px;
+color: Blue;
+}
+div#soundstext5{
+	display: flex;
+justify-content: center;
+opacity: 0;
+margin-top: -50px;
+font-size: 20px;
+color: Blue;
+}
+
+div#soundstext6{
+	display: flex;
+justify-content: center;
+opacity: 0;
+margin-top: -50px;
+font-size: 20px;
+color: Blue;
+}
+/* #soundstext1 #soundstext2 */
+/* #soundstext1,
+#soundstext2,
+#soundstext3,
+#soundstext4, {
+	display: flex;
+	justify-content: center;
+	opacity: 1;
+	margin-top: 15px;
+	font-size: 20px;
+	color: purple;
+} */
+/* vb di jeroen */
+/* #soundText,
+#soundTextTwee,
+#soundTextDrie,
+#soundTextVier,
+#soundTextVijf {
+display: flex;
+justify-content: center;
+opacity: 0;
+margin-top: 15px;
+font-size: 1.2em;
+color: red;
+/* } */
+.voice1{
 	/* font-size: 20px; */
 	color: Blue;
 	font-family: "Brenner Mono";
@@ -34,6 +108,7 @@ Feel free to adjust the defaults to your needs.
 	/* text-decoration: underline; */
 
 }
+
 .voice2{
 font-family: "Brenner Sans";
 font-style: normal;
@@ -45,14 +120,77 @@ color: Blue;
 
 .voice3 {
 	font-size: 15px;
-	font-family: "Brenner Sans Condensed"
+	font-family: "Brenner Sans Condensed";
+	animation-name: rightFadeInOut;
+	animation-duration: 3s.;
+
 }
+
 
 .voice4 {
 	font-family: "Brenner Sans";
 	font-style: Normal;
 	font-weight: 600;
 }
+
+p#manwalking.voice3.p6.on {
+	color: white;
+	/* animation-name: rightFadeInOut; */
+	/* animation duration: 3s.; */
+	/* https://codepen.io/nfamula/pen/mWPNqj?css-preprocessor=stylus */
+	animation: fadeOut4 ease 3.5s;
+	-webkit-animation: fadeOut7 ease 3.5s;
+	-moz-animation: fadeOut7 ease 3.5s;
+	-o-animation: fadeOut7 ease 3.5s;
+	-ms-animation: fadeOut7 ease 3.5s;
+}
+@keyframes fadeOut7 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut7 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut7 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut7 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut7 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+}
+}
+
+
+
 /*posishon di e video*/
 #video-placeholder{
 	margin: auto;
@@ -162,16 +300,12 @@ p.voice2.p1.on{
 	font-style: italic;
 } */
 
-
-
-
 /* **********************************************
 Sounds.
 	You can style the whole body, or you can
 	style anything within the body the moment
 	a sound starts.
 *********************************************  */
-
 
 /* The moment the class .sound1 is added to the body, the background is yellow */
 
@@ -201,6 +335,7 @@ iframe {
 
 }
 .sound1 {
+	transform: 1;
 	background: red;
 	animation-name: shake;
 	animation-duration: 2s;
@@ -225,6 +360,91 @@ iframe {
 		transform: translateX(1em);
 	}
 }
+/* .sound0 .Alarmsound1{
+	opacity: 0;
+} */
+.sound1 #soundstext1 {
+color: White;
+/* opacity: 1; */
+font-family: "Brenner Slab";
+font-style: Normal;
+font-weight: 700;
+font-size: 17px;
+margin-top:-3.5em;
+padding: 1.5em;
+/* transition: opacity 5s ease-in; */
+/* transition: opacity 0.5s ease-out; */
+/* animation: pulsePitch 100s; */
+animation: fadeOut4 ease 3.5s;
+-webkit-animation: fadeOut4 ease 3.5s;
+-moz-animation: fadeOut4 ease 3.5s;
+-o-animation: fadeOut4 ease 3.5s;
+-ms-animation: fadeOut4 ease 3.5s;
+
+}
+@keyframes fadeOut4 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut4 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut4 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut4 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut4 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+}
+}
+
+
+@keyframes pulsePitch {
+ 0% {
+ transform: scale(1);
+ box-shadow: 0 0 0 0 rgb(207, 16, 16);
+ }
+
+ 70% {
+ transform: scale(2);
+ box-shadow: 0 0 0 0 rgb(207, 16, 1);
+ }
+
+ 100% {
+ transform: scale(1);
+ box-shadow: 0 0 0 0 rgb(207, 16, 16);
+ }
+}
+
 .sound2{
 	background: #131E3A;
 	transform: rotate(360deg);
@@ -235,55 +455,299 @@ iframe {
 	background: #131E3A;
 	transform: rotate(360deg);
 	transition-duration: 2s;
+}
+/* .sound2 #soundstext1{
+	opacity: 0;
+} */
+.sound2 #soundstext2{
+	color: White;
+	/* opacity: 1; */
+	font-family: "Brenner Slab";
+	font-style: Normal;
+	font-weight: 700;
+	font-size: 15px;
+	margin-top:-3.5em;
+	padding: 1.5em;
+	animation: fadeOut1 ease 2.3s;
+  -webkit-animation: fadeOut1 ease 2.3s;
+  -moz-animation: fadeOut1 ease 2.3s;
+  -o-animation: fadeOut1 ease 2.3s;
+  -ms-animation: fadeOut1 ease 2.3s;
+}
+@keyframes fadeOut1 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
 
+@-moz-keyframes fadeOut1 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut1 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut1 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut1 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+}
 }
 .sound3 iframe{
-	transform: scale(.5);
-}
-.sound4 iframe{
-	transform: scale(1.1);
-	background-color: red;
+	transform: 1;
+	background: #131E3A;
+	animation-name: roll;
+  animation-duration: 2s;
 
 }
+@keyframes roll {
+  0% {transform: translateX(10px) }
+  50% {transform: translateX(50px) }
+  100% {transform: translateY(0px) }
+	/* https://codepen.io/hihowareyou2/pen/YqOEvv */
+}
+
+.sound4 iframe{
+	/* transform: scale(1.1); */
+	background-color: #131E3A;
+	animation-name: blinkingBackground2;
+	animation-duration: 1.5s;
+}
+@keyframes blinkingBackground2 {
+		0%		{ background-color: red;}
+		25%		{ background-color: #red;}
+		50%		{ background-color: #red;}
+		75%		{ background-color: #red;}
+		100%	        { background-color: #red;}
+	}
 
 
 .sound4{
-	background-color: red;
-	animation-name: blink;
-	animation-duration: 1s;
+	background-color: #131E3A;
+	animation-name: blinkingBackground;
+	animation-duration: 1.5s;
 }
-@keyframes blink{
-0%{opacity: 0;}
-50%{opacity: .1;}
-100%{opacity: 2;}
+@keyframes blinkingBackground{
+		0%		{ background-color: red;}
+		25%		{ background-color: #red;}
+		50%		{ background-color: #red;}
+		75%		{ background-color: #red;}
+		100%	        { background-color: #red;}
+	}
+
+.sound4 #soundstext3{
+	color: White;
+	/* opacity: 1; */
+	font-family: "Brenner Slab";
+	font-style: Normal;
+	font-weight: 700;
+	font-size: 15px;
+	margin-top:-3.5em;
+	padding: 1.5em;
+	animation: fadeOut ease 1s;
+  -webkit-animation: fadeOut ease 1s;
+  -moz-animation: fadeOut ease 1s;
+  -o-animation: fadeOut ease 1s;
+  -ms-animation: fadeOut ease 1s;
 }
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+}
+}
+/* https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08 */
+
+
+/* @keyframes blink{
+
+0%{color: red opacity: 0;}
+50%{color: red opacity: .1;}
+100%{color: red opacity: 2;}
+} */
 
 .sound5 iframe{
-
-	transform: scale(0.8);
+	animation-name: roll1;
+  animation-duration: 2s;
+}
+@keyframes roll1 {
+  0% {transform: translateX(10px) }
+  50% {transform: translateX(50px) }
+  100% {transform: translateY(0px) }
+	/* https://codepen.io/hihowareyou2/pen/YqOEvv */
 }
 .sound5{
 	background: #131E3A;
 
 }
+/* .sound5 #soundstext3{
+	opacity: 0;
+} */
 .sound6 iframe{
+	animation-name: blinkingBackground3;
+	animation-duration: 1.5s;
 	/* transform: scale(1.1);
 	transform: rotate(360deg); */
-	transform: scale(1.3);
-	transform-duration: 5s;
-
+	/* transform: scale(1.3); */
+	/* transform-duration: 5s; */
 }
+@keyframes blinkingBackground3 {
+		0%		{ background-color: red;}
+		25%		{ background-color: #red;}
+		50%		{ background-color: #red;}
+		75%		{ background-color: #red;}
+		100%	        { background-color: #red;}
+	}
+
 .sound6{
-	background: red;
-	animation-name: blink2;
-	animation-duration: 2s;
+	background: #131E3A;
+	animation-name: blinkingBackground2;
+	animation-duration: 1.5s;
+
 
 }
+@keyframes blinkingBackground2 {
+		0%		{ background-color: red;}
+		25%		{ background-color: #red;}
+		50%		{ background-color: #red;}
+		75%		{ background-color: #red;}
+		100%	        { background-color: #red;}
+	}
+/* @keyframes blinkingBackground2{
+		0%		{ background-color: #red;}
+		25%		{ background-color: #red;}
+		50%		{ background-color: #red;}
+		75%		{ background-color: #red;}
+		100%	        { background-color: #red;}
+	} */
 /* https://html-online.com/articles/blinking-text-css-animation/ */
 @keyframes blink2{
-0%{opacity: 1;}
-50%{opacity: 2.1;}
-100%{opacity: 2.5;}
+0%{opacity: 0 background-color:red;}
+50%{opacity: 2.1 background-color:red;}
+100%{opacity: 2.5 background-color:red;}
+}
+
+.sound6 #soundstext3{
+	color: White;
+	/* opacity: 1; */
+	font-family: "Brenner Slab";
+	font-style: Normal;
+	font-weight: 700;
+	font-size: 15px;
+	margin-top:-3.5em;
+	padding: 1.5em;
+	animation: fadeOut2 ease 1s;
+  -webkit-animation: fadeOut2 ease 1s;
+  -moz-animation: fadeOut2 ease 1s;
+  -o-animation: fadeOut2 ease 1s;
+  -ms-animation: fadeOut2 ease 1s;
+}
+@keyframes fadeOut2 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut2 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut2 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut2 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut2 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+}
 }
 
 .sound7{
@@ -291,11 +755,21 @@ iframe {
 	/* animation: filter-animation 5s; */
 	background: #131E3A;
 	color: #131E3A;
-
 }
 .sound7 iframe{
 	background: #131E3A;
+	animation-name: roll2;
+  animation-duration: 2s;
 }
+@keyframes roll2 {
+  0% {transform: translateX(10px) }
+  50% {transform: translateX(50px) }
+  100% {transform: translateY(0px) }
+	/* https://codepen.io/hihowareyou2/pen/YqOEvv */
+}
+/* .sound7 #soundstext3{
+	opacity: 0;
+} */
 /* @keyframes filter-animation {
   0% {
     filter: sepia(0) saturate(2);
@@ -316,9 +790,25 @@ iframe {
 	/* animation-name: blink3; */
 	/* animation-name: filter-animation; */
 transform-duration: 7s;
-	animation-duration: 3s;
-	color: red;
+	/* animation-duration: 3s; */
+	/* color: red; */
+	animation-name: blinkingBackground4;
+	animation-duration: 1.5s;
+	background-color: red;
 
+}
+@keyframes blinkingBackground4 {
+		0%		{ background-color: red;}
+		25%		{ background-color: #red;}
+		50%		{ background-color: #red;}
+		75%		{ background-color: #red;}
+		100%	        { background-color: #red;}
+	}
+
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .1;}
+100%{opacity: 2;}
 }
 /* @keyframes blink3 {
 	0%{color: red opacity: 0;}
@@ -342,10 +832,79 @@ transform-duration: 7s;
 }
 .sound8 {
 	transform: scale(1);
+	animation-name: blinkingBackground5;
+	animation-duration: 1.5s;
 	/* animation-name: blink3; */
 	/* filter: blur(5px); */
-	animation-duration: 3s;
+	/* animation-duration: 3s; */
 	color: red;
+}
+@keyframes blinkingBackground5 {
+		0%		{ background-color: red;}
+		25%		{ background-color: #red;}
+		50%		{ background-color: #red;}
+		75%		{ background-color: #red;}
+		100%	        { background-color: #red;}
+	}
+.sound8 #soundstext4{
+	color: White;
+	/* opacity: 1; */
+	font-family: "Brenner Slab";
+	font-style: Normal;
+	font-weight: 700;
+	font-size: 15px;
+	margin-top:-3.5em;
+	padding: 1.5em;
+	animation: fadeOut3 ease 1.5s;
+  -webkit-animation: fadeOut3 ease 1.5s;
+  -moz-animation: fadeOut3 ease 1,5s;
+  -o-animation: fadeOut3 ease 1.5s;
+  -ms-animation: fadeOut3 ease 1.5s;
+
+}
+@keyframes fadeOut3 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut3 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut3 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut3 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut3 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+}
 }
 .sound9 iframe{
 	animation-name: filter-animation;
@@ -392,24 +951,206 @@ transform-duration: 7s;
 	}
 }
 
+/* .sound9 #soundstext4{
+	opacity: 0;
+} */
+.sound9 #soundstext5{
+	color: White;
+	/* opacity: 1; */
+	font-family: "Brenner Slab";
+	font-style: Normal;
+	font-weight: 300;
+	font-size: 15px;
+	margin-top:-3.5em;
+	padding: 1.5em;
+	transform: scale(2.5);
+	transition-duration: 60s;
+	color: White;
+	animation: fadeOut5 ease 45s;
+  -webkit-animation: fadeOut5 ease 45s;
+  -moz-animation: fadeOut5 ease 45s;
+  -o-animation: fadeOut5 ease 45s;
+  -ms-animation: fadeOut5 ease 45s;
+
+}
+@keyframes fadeOut5 {
+  0% {
+    opacity:1;
+  }
+	90% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut5 {
+  0% {
+    opacity:1;
+  }
+	90% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut5 {
+  0% {
+    opacity:1;
+  }
+	90% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut5 {
+  0% {
+    opacity:1;
+  }
+	90% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut5 {
+  0% {
+    opacity:1;
+  }
+	90% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+}
+}
+
 	/* https://medium.com/@bharatkaravadra/how-to-create-a-css-zoom-in-out-effect-546654fb54e4 */
 .sound10 iframe{
-	/* animation-name: shake-animation; */
-	animation: .8s shake-animation infinite alternate;
+animation-name: wiggle;
+animation-duration: 40s;
+transform: scale(1.2);
 	/* animation-duration: 40s; */
+	/* animation: shake2 0.82s cubic-bezier(.36,.07,.19,.97) both; */
+
 }
 
 .sound10{
-	/* animation-name: shake-animation; */
+	transform: scale(1.2);
+	transform-duration: 20s.;
+	/* animation-name: wiggle; */
 	/* animation: .8s shake-animation infinite alternate; */
 	/* animation-duration: 40s; */
 
 }
-@keyframes shake-animation {
-  0% { transform: skewX(-15deg); }
-  5% { transform: skewX(15deg); }
-  10% { transform: skewX(-15deg); }
-  15% { transform: skewX(15deg); }
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   10% { transform: rotate(5deg); }
+	 20% { transform: rotate(-5deg); }
+	 30% { transform: rotate(5deg); }
+	 40% { transform: rotate(-5deg); }
+	 50% { transform: rotate(5deg);}
+	 60% { transform: rotate(-5deg); }
+	 70% { transform: rotate(5deg); }
+	 80% { transform: rotate(-5deg); }
+ 	 90% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+	/* https://stackoverflow.com/questions/38132700/css-wiggle-shake-effect/38133000 */
+}
+/* .sound10 #soundstext5{
+	opacity: 0;
+} */
+.sound10 #soundstext6{
+	color: White;
+	opacity: 0;
+	font-family: "Brenner Slab";
+	font-style: Normal;
+	font-weight: 700;
+	font-size: 15px;
+	margin-top:-8.8em;
+	padding: 1.5em;
+	animation: fadeOut5 ease 45s;
+  -webkit-animation: fadeOut5 ease 45s;
+  -moz-animation: fadeOut5 ease 45s;
+  -o-animation: fadeOut5 ease 45s;
+  -ms-animation: fadeOut5 ease 45s;
+}
+@keyframes fadeOut6 {
+  0% {
+    opacity:1;
+
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut6 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut6 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut6 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut6 {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+}
+}
+/* @keyframes shake2 {
+  10%, 90% {
+    transform: translate3d(-1px, -1px, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(6px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+} */
+/* @keyframes shake-animation {
+  0% { transform: skewX(-2deg); }
+  5% { transform: skewX(2deg); }
+  10% { transform: skewX(-2deg); }
+  15% { transform: skewX(2deg); }
   20% { transform: skewX(0deg); }
   100% { transform: skewX(0deg); }
-}
+}  */
+/* https://codemyui.com/pure-css-text-shake-animation/
